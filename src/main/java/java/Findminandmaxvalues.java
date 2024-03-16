@@ -12,12 +12,10 @@ public class Findminandmaxvalues {
         Collections.sort(arr);
         
         
-        for(int i=0;i<arr.size()-1;i++)
-        {
+        for(int i=0;i<arr.size()-1;i++)   {
             minCount=(long)minCount+arr.get(i);
         }
-        for(int j=arr.size()-1;j>0;j--)
-        {
+        for(int j=arr.size()-1;j>0;j--) {
              maxCount=(long)(maxCount+arr.get(j));
         }
          System.out.println(minCount + " " + maxCount);   
